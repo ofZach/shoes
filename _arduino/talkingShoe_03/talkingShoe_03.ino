@@ -9,7 +9,10 @@
 #include <Wire.h>
 
 #define AUDIOSRC 1 // 0 = EmicTTS , 1 = WTV Audio SD
-#define DEBUG_STEPSPERMIN 1
+
+//*** debug defs. note: keep Serial.prints inside a debug conditional --
+// need to be super aware of what comes out of TX pin, used by BT/XBee
+#define DEBUG_STEPS 1
 #define DEBUG_MOTION 1 //0 = off
 #define DEBUG_FSR 1
 
@@ -27,7 +30,7 @@ int busyPin = 5;  // The pin number of the busy pin.
 
 Wtv020sd16p wtv020sd16p(resetPin,clockPin,dataPin,busyPin);
 
-String sentence[] = { //for TTS
+String sentence[] = { //for TTS -- all end with "." (end char for Android)
   "you are not moving.",
   "you are walking slowly.",
   "you are walking quickly.",
@@ -49,7 +52,6 @@ String sentence[] = { //for TTS
 
 unsigned long bFootRaised;
 unsigned long bFootRaisedLastFrame;
-unsigned long lastFrameFoot;
 unsigned long goodFootLiftThresholdMillis;
 unsigned long startFootLiftMillis;
 unsigned long endFootLiftMillis;
@@ -60,7 +62,7 @@ int walkingMode;
 float stepsPerMinute;
 float stepsPerMinuteSmooth;
 
-boolean talkTime;
+boolean talkTime; //for timed audio
 unsigned long lastTalkFrame;
 
 //*** sensors ***//
@@ -78,32 +80,28 @@ void setup() {
   delay(5);
   shoeIMU.init(); //IMU setup
   delay(5);
-
   if(AUDIOSRC == 0) emicSetup();
   else wtv020sd16p.reset();
-
   delay(500);
 
-  //Serial.println("--- SETUP END ---");
+  goodFootLiftThresholdMillis = 100; //played with this quite a bit
   talkTime = false;
   lastTalkFrame = millis();
-
-  lastFrameFoot = 100;
-
   bFootRaised = 0;
   bFootRaisedLastFrame = 0;
-  goodFootLiftThresholdMillis = 50;
   lastGoodFootLiftTime = millis();
+  
   stepsPerMinute = 0;
   stepsPerMinuteSmooth = 0;
   walkingMode = 0;
+  //Serial.println("--- SETUP END ---");
 }
 
 void loop(){
   fsrVal = analogRead(fsrPin);
-  delay(5); 
+  delay(5); //analog debounce
   shoeIMU.getEuler(angles);
-  delay(5);
+  delay(5); 
   shoeIMU.getRawValues(raw);
   delay(5);
 
@@ -122,19 +120,20 @@ void loop(){
   //***step detect and timer
   if (bFootRaised && !bFootRaisedLastFrame){
     startFootLiftMillis = millis();
+    if(DEBUG_STEPS) Serial.println("--startFootLiftMillis set");
   }
 
-  if (!bFootRaised && bFootRaisedLastFrame && doubleTriggerCheck(300)){
+  if (!bFootRaised && bFootRaisedLastFrame){
     endFootLiftMillis = millis();
     if ((endFootLiftMillis - startFootLiftMillis) > goodFootLiftThresholdMillis){
       unsigned long  oldLastGoodFootTime = lastGoodFootLiftTime;
       lastGoodFootLiftTime = (endFootLiftMillis + startFootLiftMillis) / 2;
-
+      if(DEBUG_STEPS) Serial.println("--endFootLiftMillis set");
+      
       float timeBetweenSteps = lastGoodFootLiftTime - oldLastGoodFootTime;
       float stepsPerMinuteRate = 60.0 / (float)(timeBetweenSteps/1000.0);
-
       stepsPerMinute = stepsPerMinuteRate;        // smooth this somehow?
-      if (DEBUG_STEPSPERMIN){
+      if (DEBUG_STEPS){
         Serial.print("stepsPerMinute: ");
         Serial.println(stepsPerMinute);    
       }
@@ -196,15 +195,14 @@ void loop(){
     sendMsg(walkingMode); 
   }
 
-  //*** talk timer 
-  //  if(millis() - lastTalkFrame > 5000){ //currently will talk every 5 seconds
+  //*** talk auto timer 
+  //  if(millis() - lastTalkFrame > 5000){ //talk every 5 seconds
   //    if(stepsPerMinute < 15) sendMsg(0);
   //    else if(stepsPerMinute > 15 && stepsPerMinute <50){ sendMsg(1);
   //    else if(stepsPerMinute > 50 && stepsPerMinute <90){ sendMsg(2);
   //    else if(stepsPerMinute > 90) sendMsg(3);
   //    lastTalkFrame = millis();
   //  }
-
   //bFootRaisedLastFrame = bFootRaised;
 
   if (fsrVal > 750){
@@ -233,9 +231,9 @@ void loop(){
 
 void sendMsg(int msgNum){
   //Serial.print(">>> SENDING MSG: ");
-  Serial.print(sentence[msgNum]);
+  Serial.print(sentence[msgNum]); //android is looking for a "." as msg end character
 
-  if (AUDIOSRC == 1) {
+  if (AUDIOSRC == 1) {      //WTV SD Audio chip
     wtv020sd16p.asyncPlayVoice(msgNum);
   }
   else if (AUDIOSRC == 0) { //EMIC TTS
@@ -243,19 +241,8 @@ void sendMsg(int msgNum){
     emic.print(sentence[msgNum]);
     emic.print('\n');
     //while (emic.read() != ':');   // Wait here until the Emic 2 responds with a ":" indicating it's ready to accept the next command
-    digitalWrite(ledPin, LOW);
-    //  stepOn = false;
   } 
 }
-
-
-boolean doubleTriggerCheck(int stepBuffer){
-
-  if  (millis() - startFootLiftMillis < stepBuffer) return false;
-  else return true;
-}
-
-
 
 
 

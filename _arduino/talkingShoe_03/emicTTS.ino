@@ -20,13 +20,15 @@ void emicSetup(){
   delay(10);                          // Short delay
   emic.flush();                 // Flush the receive buffer
 
-  emic.print("W160\n");          //words per minute ( 75 - 600 ) 
+  //words per minute ( 75 - 600 ) 
+  emic.print("W160\n");         
   digitalWrite(ledPin, HIGH);         // Turn on LED while Emic is outputting audio
   while (emic.read() != ':');   // Wait here until the Emic 2 responds with a ":" indicating it's ready to accept the next command
   digitalWrite(ledPin, LOW);
   delay(500);
 
-  emic.print("V9\n");          //Volume control, -48 to 18db
+  //Volume control, -48 to 18db
+  emic.print("V9\n");          
   digitalWrite(ledPin, HIGH);         // Turn on LED while Emic is outputting audio
   while (emic.read() != ':');   // Wait here until the Emic 2 responds with a ":" indicating it's ready to accept the next command
   digitalWrite(ledPin, LOW);
@@ -43,5 +45,4 @@ void emicSetup(){
   digitalWrite(ledPin, HIGH);         // Turn on LED while Emic is outputting audio
   while (emic.read() != ':');   // Wait here until the Emic 2 responds with a ":" indicating it's ready to accept the next command
   digitalWrite(ledPin, LOW);
-
 }
