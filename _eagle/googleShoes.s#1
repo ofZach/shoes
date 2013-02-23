@@ -4871,6 +4871,7 @@ Source: www.kingbright.com</description>
 <part name="JP6" library="SparkFun" deviceset="M02" device="PTH"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="U$4" library="SparkFun" deviceset="FIDUCIAL" device="1X2"/>
+<part name="U$5" library="SparkFun" deviceset="FIDUCIAL" device="1X2"/>
 <part name="U1" library="SparkFun" deviceset="MCP73831" device="SMD" value="MCP73831"/>
 <part name="R5" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="2K"/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
@@ -4944,6 +4945,7 @@ Source: www.kingbright.com</description>
 <instance part="JP6" gate="G$1" x="10.16" y="22.86"/>
 <instance part="GND10" gate="1" x="20.32" y="17.78"/>
 <instance part="U$4" gate="G$1" x="236.22" y="17.78"/>
+<instance part="U$5" gate="G$1" x="231.14" y="17.78"/>
 <instance part="U1" gate="G$1" x="58.42" y="22.86"/>
 <instance part="R5" gate="G$1" x="76.2" y="15.24" rot="R270"/>
 <instance part="GND14" gate="1" x="71.12" y="15.24"/>
