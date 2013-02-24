@@ -2034,8 +2034,8 @@ design rules under a new name.</description>
 <attribute name="MF" value="" x="19.558" y="68.453" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="19.558" y="68.453" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="JP2" library="SparkFun-Connectors" package="1X07" value="" x="21.59" y="22.86"/>
-<element name="JP3" library="SparkFun-Connectors" package="1X07" value="" x="22.86" y="16.51"/>
+<element name="JP2" library="SparkFun-Connectors" package="1X07" value="" x="2.54" y="-3.81"/>
+<element name="JP3" library="SparkFun-Connectors" package="1X07" value="" x="2.54" y="-8.89"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -2079,9 +2079,7 @@ design rules under a new name.</description>
 <contactref element="D8" pad="C"/>
 <contactref element="D9" pad="C"/>
 <contactref element="D10" pad="C"/>
-<contactref element="JP3" pad="2"/>
-<wire x1="35.941" y1="61.344" x2="32.727" y2="62.103" width="0" layer="19" extent="1-1"/>
-<wire x1="6.32" y1="75.94" x2="4.665" y2="72.39" width="0" layer="19" extent="1-1"/>
+<wire x1="4.665" y1="72.39" x2="6.32" y2="75.94" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC" class="1">
 <contactref element="U3" pad="4"/>
@@ -2095,7 +2093,6 @@ design rules under a new name.</description>
 <contactref element="JP1" pad="3"/>
 <contactref element="JP5" pad="6"/>
 <contactref element="JP7" pad="3"/>
-<contactref element="JP3" pad="1"/>
 <wire x1="32.7" y1="64.643" x2="36.764" y2="67.2799" width="0" layer="19" extent="1-1"/>
 <wire x1="31.027" y1="62.103" x2="32.7" y2="64.643" width="0" layer="19" extent="1-1"/>
 <wire x1="26.628" y1="62.4686" x2="31.027" y2="62.103" width="0" layer="19" extent="1-1"/>
@@ -2104,9 +2101,8 @@ design rules under a new name.</description>
 <wire x1="25.828" y1="53.8834" x2="26.628" y2="62.4686" width="0" layer="19" extent="1-1"/>
 <wire x1="24.228" y1="53.8834" x2="25.828" y2="53.8834" width="0" layer="19" extent="1-1"/>
 <wire x1="6.858" y1="69.088" x2="26.628" y2="62.4686" width="0" layer="19" extent="1-1"/>
-<wire x1="22.86" y1="16.51" x2="35.814" y2="50.546" width="0" layer="19" extent="1-1"/>
-<wire x1="10.414" y1="7.493" x2="22.86" y2="16.51" width="0" layer="19" extent="1-1"/>
-<wire x1="1.778" y1="23.876" x2="10.414" y2="7.493" width="0" layer="19" extent="1-1"/>
+<wire x1="1.778" y1="23.876" x2="24.228" y2="53.8834" width="0" layer="19" extent="1-1"/>
+<wire x1="10.414" y1="7.493" x2="1.778" y2="23.876" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RST">
 <contactref element="U3" pad="29"/>
@@ -2146,23 +2142,15 @@ design rules under a new name.</description>
 </signal>
 <signal name="D2">
 <contactref element="U3" pad="32"/>
-<contactref element="JP3" pad="3"/>
-<wire x1="27.94" y1="16.51" x2="20.3354" y2="55.376" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D3">
 <contactref element="U3" pad="1"/>
-<contactref element="JP2" pad="3"/>
-<wire x1="26.67" y1="22.86" x2="21.828" y2="53.8834" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D4">
 <contactref element="U3" pad="2"/>
-<contactref element="JP2" pad="4"/>
-<wire x1="29.21" y1="22.86" x2="22.628" y2="53.8834" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D5">
 <contactref element="U3" pad="9"/>
-<contactref element="JP2" pad="5"/>
-<wire x1="31.75" y1="22.86" x2="28.9206" y2="55.376" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D6">
 <contactref element="U3" pad="10"/>
