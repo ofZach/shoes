@@ -1,0 +1,58 @@
+Partlist exported from /Users/jmsaavedra/Documents/eclipse-workspace/talkingShoes/_eagle/googleShoes_rev02.sch at 2/24/13 7:51 PM
+
+Assembly variant: 
+
+Part Value             Device                Package          Description                            
+C1   10uF              CAP_POL1206           EIA3216          Capacitor Polarized                    
+C2   0.1uF             C-USC0805             C0805            CAPACITOR, American symbol             
+C3   0.1uF             C-USC0805             C0805            CAPACITOR, American symbol             
+C4   1uF               CAP1206               1206             Capacitor                              
+C5   1uF               CAP1206               1206             Capacitor                              
+C6   0.1uF             C-USC0805             C0805            CAPACITOR, American symbol             
+C7   1uF               CAP1206               1206             Capacitor                              
+C8   10uF              CAP1206               1206             Capacitor                              
+C9   4.7uF             C-USC0805             C0805            CAPACITOR, American symbol             
+C10  4.7uF             C-USC0805             C0805            CAPACITOR, American symbol             
+D1   Red               LEDCHIP-LED0805       CHIP-LED0805     LED                                    
+D2   LED               LEDCHIP-LED0805       CHIP-LED0805     LED                                    
+D3   LED               LEDCHIP-LED0805       CHIP-LED0805     LED                                    
+D4   Yellow            LEDCHIP-LED0805       CHIP-LED0805     LED                                    
+D5   LED               LEDCHIP-LED0805       CHIP-LED0805     LED                                    
+D6   LED               LEDCHIP-LED0805       CHIP-LED0805     LED                                    
+D7   LED               LEDCHIP-LED0805       CHIP-LED0805     LED                                    
+D8   LED               LEDCHIP-LED0805       CHIP-LED0805     LED                                    
+D9   LED               LEDCHIP-LED0805       CHIP-LED0805     LED                                    
+D10  LED               LEDCHIP-LED0805       CHIP-LED0805     LED                                    
+F1   PTCSMD            PTCSMD                PTC-1206         Resettable Fuse PTC                    
+JP1  firefly_mate_gold PINHD-1X6B            1X06-BIG         PIN HEADER                             
+JP2                    M07                   1X07             Header 7                               
+JP3                    M07                   1X07             Header 7                               
+JP4  AVR_SPI           AVR_SPI_PRG_6PTH      2X3              AVR ISP 6 Pin                          
+JP5  6DOF              PINHD-1X6B            1X06-BIG         PIN HEADER                             
+JP6                    M02PTH                1X02             Header 2                               
+JP7  FSR_BATT_CONNECT  M04PTH                1X04             Header 4                               
+JP8  IN                M02PTH                1X02             Header 2                               
+JP9  OUT               M02PTH                1X02             Header 2                               
+JP11 VOLUME            M03PTH                1X03             Header 3                               
+LED1                   LEDCHIPLED_0805       CHIPLED_0805     LED                                    
+Q1   MMBT2222A         TRANSISTOR_NPNSOT23-3 SOT23-3          Transistor NPN                         
+R1   1k                R-US_M0805            M0805            RESISTOR, American symbol              
+R2   1Mohm             R-US_M0805            M0805            RESISTOR, American symbol              
+R3   10K               R-US_M0805            M0805            RESISTOR, American symbol              
+R4   10k               R-US_M0805            M0805            RESISTOR, American symbol              
+R5   2K                R-US_M0805            M0805            RESISTOR, American symbol              
+R6   10K               R-US_M0805            M0805            RESISTOR, American symbol              
+R7   330               R-US_M0805            M0805            RESISTOR, American symbol              
+R8   150K              R-US_M0805            M0805            RESISTOR, American symbol              
+R9   470               R-US_M0805            M0805            RESISTOR, American symbol              
+R10  150K              R-US_M0805            M0805            RESISTOR, American symbol              
+RN1  CTS742C083        CTS742C083            CTS742C083       Chip Resistor Array 4 Single Resistor  
+RN2  CTS742C083        CTS742C083            CTS742C083       Chip Resistor Array 4 Single Resistor  
+S2                     SWITCH-SPSTSMD        AYZ0202          SPST Switch                            
+SJ1                    SOLDERJUMPERNC2       SJ_2S-NOTRACE    Solder Jumper                          
+U1   MCP73831          MCP73831SMD           SOT23-5                                                 
+U2   3.3V              V_REG_LDOSMD          SOT23-5          Voltage Regulator LDO                  
+U3   ATMEGA328         ATMEGA168             TQFP32-08                                               
+U4   TPA2005D1DRB      TPA2005D1DRB          QFN-8_PAD        1.4W MONO CLASS-D AUDIO POWER AMPLIFIER
+USB1 MOLEX-47346-0001  MOLEX-47346-0001      MOLEX-47364-0001 MICRO USB B, BOTTOM MOUNT              
+Y1   8MHz              RESONATORSMD          RESONATOR-SMD    Resonator                              

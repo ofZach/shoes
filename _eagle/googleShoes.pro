@@ -2,24 +2,24 @@ EAGLE AutoRouter Statistics:
 
 Job           : /Users/jmsaavedra/Documents/eclipse-workspace/talkingShoes/_eagle/googleShoes.brd
 
-Start at      : 19:25:21 (2/24/13)
-End at        : 19:25:22 (2/24/13)
-Elapsed time  : 00:00:01
+Start at      : 21:13:11 (2/24/13)
+End at        : 21:13:11 (2/24/13)
+Elapsed time  : 00:00:00
 
 Signals       :    58   RoutingGrid: 8 mil  Layers: 2
-Connections   :   118   predefined:  39 ( 0 Vias )
+Connections   :   124   predefined:  114 ( 107 Vias )
 
 Router memory :   619500
 
 Passname          :    Busses     Route
 
-Time per pass     :  00:00:00  00:00:01
-Number of Ripups  :         0         1
-max. Level        :         0         1
-max. Total        :         0         1
+Time per pass     :  00:00:00  00:00:00
+Number of Ripups  :         0         0
+max. Level        :         0         0
+max. Total        :         0         0
 
-Routed            :         6        79
-Vias              :         0        71
-Resolution        :    38.1 %   100.0 %
+Routed            :         1         9
+Vias              :         0         0
+Resolution        :    92.7 %    99.2 %
 
-Final             : 91.5% finished. Polygons may have fallen apart.
+Final             : 91.9% finished. Polygons may have fallen apart.
