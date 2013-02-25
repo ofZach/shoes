@@ -10695,7 +10695,6 @@ Source: http://www.ctscorp.com/components/Datasheets/CTSChipArrayDs.pdf</descrip
 <pinref part="JP7" gate="G$1" pin="3"/>
 <wire x1="190.5" y1="88.9" x2="203.2" y2="88.9" width="0.1524" layer="91"/>
 <label x="190.5" y="88.9" size="1.778" layer="95"/>
-<label x="187.96" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RST" class="0">
@@ -10796,9 +10795,11 @@ Source: http://www.ctscorp.com/components/Datasheets/CTSChipArrayDs.pdf</descrip
 </net>
 <net name="D3" class="0">
 <segment>
-<wire x1="121.92" y1="114.3" x2="86.36" y2="114.3" width="0.1524" layer="91"/>
 <label x="91.44" y="114.3" size="1.778" layer="95"/>
 <pinref part="U3" gate="G$1" pin="PD3(INT1)"/>
+<label x="236.22" y="78.74" size="1.778" layer="95"/>
+<wire x1="121.92" y1="114.3" x2="86.36" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="78.74" x2="228.6" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D4" class="0">
@@ -10806,6 +10807,8 @@ Source: http://www.ctscorp.com/components/Datasheets/CTSChipArrayDs.pdf</descrip
 <wire x1="121.92" y1="111.76" x2="86.36" y2="111.76" width="0.1524" layer="91"/>
 <label x="91.44" y="111.76" size="1.778" layer="95"/>
 <pinref part="U3" gate="G$1" pin="PD4(XCK/T0)"/>
+<label x="236.22" y="81.28" size="1.778" layer="95"/>
+<wire x1="236.22" y1="81.28" x2="228.6" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D5" class="0">
@@ -10813,6 +10816,8 @@ Source: http://www.ctscorp.com/components/Datasheets/CTSChipArrayDs.pdf</descrip
 <wire x1="121.92" y1="109.22" x2="86.36" y2="109.22" width="0.1524" layer="91"/>
 <label x="91.44" y="109.22" size="1.778" layer="95"/>
 <pinref part="U3" gate="G$1" pin="PD5(T1)"/>
+<wire x1="236.22" y1="83.82" x2="228.6" y2="83.82" width="0.1524" layer="91"/>
+<label x="236.22" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D6" class="0">

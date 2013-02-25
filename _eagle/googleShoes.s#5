@@ -15369,8 +15369,6 @@ type RDH, grid 15 mm</description>
 <part name="U4" library="mike-temp" deviceset="TPA2005D1" device="DRB"/>
 <part name="R8" library="resistor" deviceset="R-US_" device="M0805" value="150K"/>
 <part name="R10" library="resistor" deviceset="R-US_" device="M0805" value="150K"/>
-<part name="R1A" library="SparkFun" deviceset="RESISTOR" device="AXIAL-0.3" value="DNP"/>
-<part name="R2A" library="SparkFun" deviceset="RESISTOR" device="AXIAL-0.3" value="DNP"/>
 </parts>
 <sheets>
 <sheet>
@@ -15514,8 +15512,6 @@ type RDH, grid 15 mm</description>
 <instance part="U4" gate="G$1" x="396.24" y="129.54"/>
 <instance part="R8" gate="G$1" x="353.06" y="132.08"/>
 <instance part="R10" gate="G$1" x="353.06" y="121.92"/>
-<instance part="R1A" gate="G$1" x="353.06" y="139.7"/>
-<instance part="R2A" gate="G$1" x="353.06" y="114.3"/>
 </instances>
 <busses>
 </busses>
@@ -16326,16 +16322,11 @@ type RDH, grid 15 mm</description>
 </net>
 <net name="IN-AMP" class="0">
 <segment>
-<wire x1="360.68" y1="121.92" x2="358.14" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="381" y1="127" x2="373.38" y2="127" width="0.1524" layer="91"/>
 <wire x1="373.38" y1="127" x2="373.38" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="373.38" y1="121.92" x2="360.68" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="358.14" y1="114.3" x2="360.68" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="360.68" y1="114.3" x2="360.68" y2="121.92" width="0.1524" layer="91"/>
-<junction x="360.68" y="121.92"/>
+<wire x1="373.38" y1="121.92" x2="358.14" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="2"/>
 <pinref part="U4" gate="G$1" pin="IN-"/>
-<pinref part="R2A" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -16363,38 +16354,23 @@ type RDH, grid 15 mm</description>
 <segment>
 <wire x1="373.38" y1="129.54" x2="381" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="373.38" y1="132.08" x2="373.38" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="358.14" y1="132.08" x2="360.68" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="360.68" y1="132.08" x2="373.38" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="360.68" y1="132.08" x2="360.68" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="360.68" y1="139.7" x2="358.14" y2="139.7" width="0.1524" layer="91"/>
-<junction x="360.68" y="132.08"/>
+<wire x1="358.14" y1="132.08" x2="373.38" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="IN+"/>
 <pinref part="R8" gate="G$1" pin="2"/>
-<pinref part="R1A" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
-<wire x1="345.44" y1="132.08" x2="347.98" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="337.82" y1="132.08" x2="345.44" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="347.98" y1="139.7" x2="345.44" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="345.44" y1="139.7" x2="345.44" y2="132.08" width="0.1524" layer="91"/>
-<junction x="345.44" y="132.08"/>
+<wire x1="337.82" y1="132.08" x2="347.98" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="1"/>
 <pinref part="C5" gate="G$1" pin="2"/>
-<pinref part="R1A" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
-<wire x1="347.98" y1="121.92" x2="345.44" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="345.44" y1="121.92" x2="337.82" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="347.98" y1="114.3" x2="345.44" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="345.44" y1="114.3" x2="345.44" y2="121.92" width="0.1524" layer="91"/>
-<junction x="345.44" y="121.92"/>
+<wire x1="347.98" y1="121.92" x2="337.82" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="1"/>
 <pinref part="C7" gate="G$1" pin="2"/>
-<pinref part="R2A" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>

@@ -16329,15 +16329,13 @@ Source: www.kingbright.com</description>
 <text x="332.74" y="104.14" size="1.778" layer="97">FOR HIGHER GAIN, CHANGE R1, R2</text>
 <text x="332.74" y="101.6" size="1.778" layer="97">USING THROUGH-HOLE PADS R1A, R2A</text>
 <text x="332.74" y="99.06" size="1.778" layer="97">(SEE DATASHEET FOR VALUES)</text>
-<text x="276.86" y="40.64" size="1.778" layer="97">SDN* = SHUTDOWN INPUT</text>
-<text x="279.4" y="38.1" size="1.778" layer="97">&lt; 2v = SHUTDOWN</text>
-<text x="276.86" y="45.72" size="1.778" layer="97">VCC RANGE: 2.5V TO 5.5V</text>
 <text x="284.48" y="154.94" size="1.778" layer="97">(COM-00906, COM-09940, COM-09119, COM-10613, ETC.)</text>
 <text x="441.96" y="129.54" size="1.778" layer="97">KEEP SPEAKER LEADS</text>
 <text x="441.96" y="127" size="1.778" layer="97">AS SHORT AS PRACTICAL</text>
 <text x="441.96" y="124.46" size="1.778" layer="97">TO MINIMIZE 250KHz EMI</text>
 <rectangle x1="324.866" y1="139.192" x2="325.374" y2="140.208" layer="94"/>
 <rectangle x1="307.34" y1="48.26" x2="332.74" y2="81.28" layer="97"/>
+<text x="312.42" y="45.72" size="1.778" layer="97">there are decouplers in the main circuit, are these still needed?</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
