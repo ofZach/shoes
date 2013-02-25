@@ -17050,7 +17050,7 @@ Source: www.kingbright.com</description>
 <pinref part="D4" gate="G$1" pin="A"/>
 </segment>
 </net>
-<net name="VBATT" class="1">
+<net name="VBATT" class="0">
 <segment>
 <wire x1="83.82" y1="25.4" x2="93.98" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="20.32" x2="83.82" y2="25.4" width="0.1524" layer="91"/>
