@@ -3276,7 +3276,7 @@ design rules under a new name.</description>
 <element name="C8" library="SparkFun" package="1206" value="10uF" x="25.019" y="48.768" rot="R180"/>
 <element name="U4" library="mike-temp" package="QFN-8_PAD" value="TPA2005D1DRB" x="27.94" y="42.672" rot="R90"/>
 <element name="R8" library="resistor" package="M0805" value="150K" x="22.86" y="43.18"/>
-<element name="R10" library="resistor" package="M0805" value="150K" x="35.687" y="49.403" rot="R180"/>
+<element name="R10" library="resistor" package="M0805" value="150K" x="34.544" y="49.53" rot="R180"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -3332,9 +3332,7 @@ design rules under a new name.</description>
 <contactref element="C4" pad="2"/>
 <contactref element="Q1" pad="2"/>
 <contactref element="C8" pad="2"/>
-<wire x1="23.746" y1="46.228" x2="23.619" y2="48.768" width="0" layer="19" extent="1-1"/>
-<wire x1="30.541" y1="46.879" x2="23.746" y2="46.228" width="0" layer="19" extent="1-1"/>
-<wire x1="6.32" y1="75.94" x2="4.665" y2="72.39" width="0" layer="19" extent="1-1"/>
+<wire x1="4.665" y1="72.39" x2="6.32" y2="75.94" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC" class="1">
 <contactref element="U3" pad="4"/>
@@ -3361,12 +3359,12 @@ design rules under a new name.</description>
 <wire x1="36.322" y1="52.705" x2="35.941" y2="58.544" width="0" layer="19" extent="1-1"/>
 <wire x1="25.828" y1="53.8834" x2="26.628" y2="62.4686" width="0" layer="19" extent="1-1"/>
 <wire x1="24.228" y1="53.8834" x2="25.828" y2="53.8834" width="0" layer="19" extent="1-1"/>
-<wire x1="34.864" y1="42.418" x2="36.322" y2="52.705" width="0" layer="19" extent="1-1"/>
-<wire x1="33.97" y1="42.545" x2="34.864" y2="42.418" width="0" layer="19" extent="1-1"/>
-<wire x1="26.465" y1="42.997" x2="33.97" y2="42.545" width="0" layer="19" extent="1-1"/>
+<wire x1="26.419" y1="48.768" x2="25.828" y2="53.8834" width="0" layer="19" extent="1-1"/>
+<wire x1="26.546" y1="46.228" x2="26.419" y2="48.768" width="0" layer="19" extent="1-1"/>
+<wire x1="26.465" y1="42.997" x2="26.546" y2="46.228" width="0" layer="19" extent="1-1"/>
+<wire x1="33.97" y1="42.545" x2="26.465" y2="42.997" width="0" layer="19" extent="1-1"/>
+<wire x1="34.864" y1="42.418" x2="33.97" y2="42.545" width="0" layer="19" extent="1-1"/>
 <wire x1="19.431" y1="33.274" x2="26.465" y2="42.997" width="0" layer="19" extent="1-1"/>
-<wire x1="26.546" y1="46.228" x2="34.864" y2="42.418" width="0" layer="19" extent="1-1"/>
-<wire x1="26.419" y1="48.768" x2="26.546" y2="46.228" width="0" layer="19" extent="1-1"/>
 <wire x1="1.778" y1="23.876" x2="19.431" y2="33.274" width="0" layer="19" extent="1-1"/>
 <wire x1="10.414" y1="7.493" x2="1.778" y2="23.876" width="0" layer="19" extent="1-1"/>
 <wire x1="6.858" y1="69.088" x2="26.628" y2="62.4686" width="0" layer="19" extent="1-1"/>
@@ -3482,7 +3480,7 @@ design rules under a new name.</description>
 <signal name="N$12">
 <contactref element="Y1" pad="1"/>
 <contactref element="U3" pad="8"/>
-<wire x1="28.632" y1="51.816" x2="27.428" y2="53.8834" width="0" layer="19" extent="1-1"/>
+<wire x1="27.428" y1="53.8834" x2="28.632" y2="51.816" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="R1" pad="2"/>
@@ -3609,18 +3607,18 @@ design rules under a new name.</description>
 <contactref element="C5" pad="1"/>
 <contactref element="SJ1" pad="1"/>
 <contactref element="JP11" pad="2"/>
-<wire x1="18.412" y1="48.768" x2="22.7529" y2="41.021" width="0" layer="19" extent="1-1"/>
-<wire x1="20.955" y1="51.689" x2="18.412" y2="48.768" width="0" layer="19" extent="1-1"/>
+<wire x1="18.412" y1="48.768" x2="20.955" y2="51.689" width="0" layer="19" extent="1-1"/>
+<wire x1="22.7529" y1="41.021" x2="18.412" y2="48.768" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="IN-AMP">
 <contactref element="R10" pad="2"/>
 <contactref element="U4" pad="4"/>
-<wire x1="29.415" y1="43.647" x2="34.737" y2="49.403" width="0" layer="19" extent="1-1"/>
+<wire x1="29.415" y1="43.647" x2="33.594" y2="49.53" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$18">
 <contactref element="R7" pad="1"/>
 <contactref element="LED1" pad="A"/>
-<wire x1="36.764" y1="42.418" x2="33.943" y2="44.577" width="0" layer="19" extent="1-1"/>
+<wire x1="33.943" y1="44.577" x2="36.764" y2="42.418" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$19">
 <contactref element="R6" pad="2"/>
@@ -3635,17 +3633,17 @@ design rules under a new name.</description>
 <signal name="IN+AMP">
 <contactref element="U4" pad="3"/>
 <contactref element="R8" pad="2"/>
-<wire x1="29.415" y1="42.997" x2="23.81" y2="43.18" width="0" layer="19" extent="1-1"/>
+<wire x1="23.81" y1="43.18" x2="29.415" y2="42.997" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$21">
 <contactref element="R8" pad="1"/>
 <contactref element="C5" pad="2"/>
-<wire x1="21.212" y1="48.768" x2="21.91" y2="43.18" width="0" layer="19" extent="1-1"/>
+<wire x1="21.91" y1="43.18" x2="21.212" y2="48.768" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$22">
 <contactref element="R10" pad="1"/>
 <contactref element="C7" pad="2"/>
-<wire x1="36.706" y1="47.117" x2="36.637" y2="49.403" width="0" layer="19" extent="1-1"/>
+<wire x1="36.706" y1="47.117" x2="35.494" y2="49.53" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="IN-">
 <contactref element="JP3" pad="5"/>
@@ -3661,9 +3659,9 @@ design rules under a new name.</description>
 <contactref element="JP8" pad="1"/>
 <contactref element="SJ1" pad="2"/>
 <contactref element="JP11" pad="1"/>
-<wire x1="19.05" y1="41.91" x2="21.9393" y2="41.021" width="0" layer="19" extent="1-1"/>
-<wire x1="18.415" y1="51.689" x2="19.05" y2="41.91" width="0" layer="19" extent="1-1"/>
-<wire x1="19.431" y1="25.654" x2="19.05" y2="41.91" width="0" layer="19" extent="1-1"/>
+<wire x1="19.05" y1="41.91" x2="18.415" y2="51.689" width="0" layer="19" extent="1-1"/>
+<wire x1="21.9393" y1="41.021" x2="19.05" y2="41.91" width="0" layer="19" extent="1-1"/>
+<wire x1="19.431" y1="25.654" x2="21.9393" y2="41.021" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
