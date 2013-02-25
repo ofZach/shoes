@@ -17249,9 +17249,12 @@ Source: www.kingbright.com</description>
 <wire x1="157.48" y1="139.7" x2="154.94" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="139.7" x2="152.4" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="139.7" x2="152.4" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="180.34" x2="154.94" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="177.8" x2="154.94" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="144.78" x2="154.94" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="144.78" x2="154.94" y2="139.7" width="0.1524" layer="91"/>
 <junction x="154.94" y="139.7"/>
+<pinref part="JP10" gate="G$1" pin="1"/>
+<junction x="172.72" y="180.34"/>
+<wire x1="172.72" y1="144.78" x2="172.72" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="OUT+" class="0">
@@ -17417,12 +17420,6 @@ Source: www.kingbright.com</description>
 <junction x="152.4" y="104.14"/>
 <junction x="142.24" y="81.28"/>
 <pinref part="JP14" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$24" class="0">
-<segment>
-<pinref part="JP10" gate="G$1" pin="1"/>
-<junction x="172.72" y="180.34"/>
 </segment>
 </net>
 </nets>

@@ -16347,7 +16347,6 @@ Source: www.kingbright.com</description>
 <part name="R10" library="resistor" deviceset="R-US_" device="M0805" value="150K"/>
 <part name="JP13" library="adafruit" deviceset="PINHD-1X1" device="CB"/>
 <part name="JP14" library="adafruit" deviceset="PINHD-1X1" device="CB"/>
-<part name="JP15" library="adafruit" deviceset="PINHD-1X1" device="CB"/>
 <part name="JP10" library="adafruit" deviceset="PINHD-1X1" device="CB"/>
 <part name="JP12" library="adafruit" deviceset="PINHD-1X1" device="CB"/>
 <part name="JP17" library="adafruit" deviceset="PINHD-1X1" device="CB"/>
@@ -16489,7 +16488,6 @@ Source: www.kingbright.com</description>
 <instance part="R10" gate="G$1" x="353.06" y="121.92"/>
 <instance part="JP13" gate="G$1" x="134.62" y="83.82" rot="R90"/>
 <instance part="JP14" gate="G$1" x="142.24" y="83.82" rot="R90"/>
-<instance part="JP15" gate="G$1" x="149.86" y="83.82" rot="R90"/>
 <instance part="JP10" gate="G$1" x="172.72" y="177.8" rot="R270"/>
 <instance part="JP12" gate="G$1" x="154.94" y="177.8" rot="R270"/>
 <instance part="JP17" gate="G$1" x="147.32" y="177.8" rot="R270"/>
@@ -17135,11 +17133,8 @@ Source: www.kingbright.com</description>
 <pinref part="RN2" gate="G$1" pin="6"/>
 <wire x1="157.48" y1="101.6" x2="154.94" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="101.6" x2="149.86" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="81.28" x2="149.86" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="88.9" x2="154.94" y2="101.6" width="0.1524" layer="91"/>
 <junction x="154.94" y="101.6"/>
-<junction x="149.86" y="81.28"/>
-<pinref part="JP15" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$7" class="0">
